@@ -4,7 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const db = require('./lib/db');
-const clients = require('./lib/clients/repositories/models/clients')
+const costs = require('./lib/costs/repositories/models/costs');
+const Client = require('./lib/clients/repositories/models/clients');
+const CostTypes = require('./lib/cost_types/repositories/models/cost-types');
 
 // var indexRouter = require('./routes/index');
 
@@ -16,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
