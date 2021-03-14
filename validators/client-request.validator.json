@@ -4,19 +4,16 @@
         "clientId": {
             "description": "Client id to filter with",
             "type": "integer",
-            "pattern": "^[1-9][0-9]*$",
             "minimum": 1
         },
         "projectId": {
             "description": "Project id to filter with",
             "type": "integer",
-            "pattern": "^[1-9][0-9]*$",
             "minimum": 1
         },
         "costTypeId": {
             "description": "Cost type id to filter with",
             "type": "integer",
-            "pattern": "^[1-9][0-9]*$",
             "minimum": 1
         }
     }
