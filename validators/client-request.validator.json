@@ -3,18 +3,27 @@
     "properties": {
         "clientId": {
             "description": "Client id to filter with",
-            "type": "integer",
-            "minimum": 1
+            "type": "array",
+            "items": {
+                "type": "integer",
+                "minimum": 1
+            }
         },
         "projectId": {
             "description": "Project id to filter with",
-            "type": "integer",
-            "minimum": 1
+            "type": "array",
+            "items": {
+                "type": "integer",
+                "minimum": 1
+            }
         },
         "costTypeId": {
             "description": "Cost type id to filter with",
-            "type": "integer",
-            "minimum": 1
+            "type": "array",
+            "items": {
+                "type": "integer",
+                "minimum": 1
+            }
         }
     }
 }
