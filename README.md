@@ -1,5 +1,5 @@
 ### ClearGlass Cost Explorer
-+ Pre-requisites
++ Prerequisites
 1. MySql
 2. NPM
 3. Node.js
